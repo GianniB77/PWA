@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { IPost } from '../interfaces/IPost';
 import axios from 'axios';
-import CardComponent from '../components/CardComponent';
+import CardComponent from '../components/PostsComponent';
 import { Link } from 'react-router-dom';
 
 function Home() {
@@ -33,7 +33,7 @@ function Home() {
     }
 
     return (
-        <div className='container place-content-center mx-auto flex flex-wrap p-10'>
+        <div className='container place-content-center mx-auto p-10'>
             {Posts.map(p => (
                 <Link to={`/article/${p.id}`}>
                     <CardComponent id={p.id} title={p.title} body={''} />

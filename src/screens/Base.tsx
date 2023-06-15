@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 function Root() {
     return (
-        <div className='m-0 bg-slate-300'>
+        <div className='m-0'>
             <AppBar position="static">
                 <Toolbar>
                     <Link to={`/`}>

@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router';
 import { IPost } from '../interfaces/IPost';
-import CardComponent from '../components/CardComponent';
+import CardComponent from '../components/PostsComponent';
 
 function Post() {
 
